@@ -1,4 +1,5 @@
 .nextflow/
+.nextflow.log*
 work/
 results/
 logs/*.html
