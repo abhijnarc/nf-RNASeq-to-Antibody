@@ -1,0 +1,10 @@
+.nextflow/
+work/
+results/
+logs/*.html
+logs/*.txt
+*.fastq.gz
+*.fa
+*.airr
+*.csv
+*.tsv
