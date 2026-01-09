@@ -1,0 +1,18 @@
+nf-bcr-pipeline/
+├── main.nf
+├── nextflow.config
+├── workflows/
+│   └── bcr_analysis.nf
+├── modules/
+│   ├── fastp.nf
+│   ├── trust4.nf
+│   ├── seqio/
+│   │   ├── rename_cases_controls.nf
+│   │   ├── filter_bcrs.nf
+│   │   ├── sort_chains.nf
+│   │   └── cdr_parse.nf
+│   ├── mmseqs2.nf
+│   ├── igblast.nf
+│   └── riot.nf
+└── conf/
+    └── base.config

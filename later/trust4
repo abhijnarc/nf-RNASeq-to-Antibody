@@ -1,0 +1,22 @@
+process TRUST4 {
+    tag "$sample_id"
+    publishDir "${params.outdir}/trust4", mode: 'copy'
+
+    input:
+    tuple val(sample_id), path(reads)
+
+    output:
+    tuple val(sample_id), path("${sample_id}_output*")
+
+    script:
+    """
+    run-trust4 \
+        -1 ${reads[0]} \
+        -2 ${reads[1]} \
+        -f ${params.ref_file} \
+        --ref ${params.ref_file} \
+        -t ${task.cpus} \
+        --od . \
+        -o ${sample_id}_output
+    """
+}

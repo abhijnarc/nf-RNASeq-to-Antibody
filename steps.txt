@@ -1,0 +1,11 @@
+1. Raw read quality control, adapter trimming and clipping (Fastp)
+2. Identifying and assembling the variable regions of BCR sequences (TRUST4)
+3. Renumbering and renaming case and control (SeqIO)
+4. Parsing output FASTA file from TRUST4, extract and filter BCR sequences, and summarize key metrics (SeqIO)
+5. Sort heavy and light chains (SeqIO)
+6. Parsing CDRs and creating pseudo-sequences (SeqIO)
+6. Clustering case and control fasta (MMSeqs2)
+7. Scanning against germline databases for chain sequences (IgBLAST)
+8. Rapid annotation of immunoglobulin sequences to get to get an aligned versions (RIOT)
+9. Fasta files of antibodys/nanobodies with >VH and >VL (RIOT)
+

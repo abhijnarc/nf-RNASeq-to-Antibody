@@ -1,0 +1,25 @@
+bcr_to_vhvl_pipeline/
+├── main.nf
+├── nextflow.config
+├── references/
+│   ├── hg38_bcr.fa
+│   ├── human_IMGT+C.fa
+│   ├── GRCm38_bcrtcr.fa
+│   └── rabbit_IMGT+C.fa 
+├── data/
+│   ├── IM_R1_001.fastq.gz
+│   ├── IM_R2_001.fastq.gz
+│   ├── CT_R1_001.fastq.gz
+│   └── CT_R2_001.fastq.gz
+├── bin/
+│   ├── fastp.sh
+│   ├── trust4_ct.sh
+│   ├── trust4_im.sh
+│   ├── process_seq.py 
+│   ├── sort_chain.py
+│   ├── pseudo.py
+│   ├── mmseqs2.sh
+│   ├── igblast.sh
+│   ├── airr_filter.py
+│   ├── riot_succesful.py
+│   └── expression_sort.py
