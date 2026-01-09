@@ -1,5 +1,7 @@
 .nextflow/
 .nextflow.log*
+.nextflow-console.log
+.nextflow.pid
 work/
 results/
 logs/*.html
