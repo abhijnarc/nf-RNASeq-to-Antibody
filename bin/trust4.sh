@@ -5,25 +5,26 @@ R1="$1"
 R2="$2"
 SAMPLE="$3"
 ORGANISM="$4"
-REFDIR="$5"
 
-OUTDIR="${SAMPLE}"
-mkdir -p "${OUTDIR}"
-
-if [[ "$ORGANISM" == "human" ]]; then
-  REF_FASTA="${REFDIR}/hg38_bcrtcr.fa"
-  IMGT_FASTA="${REFDIR}/human_IMGT+C.fa"
-elif [[ "$ORGANISM" == "rabbit" ]]; then
-  REF_FASTA="${REFDIR}/GRCm38_bcrtcr.fa"
-  IMGT_FASTA="${REFDIR}/rabbit_IMGT+C.fa"
+# Select reference files based on organism
+if [[ "$ORGANISM" == "rabbit" ]]; then
+    ref_file=/home/user/tools/TRUST4/rabbit/rabbit_IMGT+C.fa
+elif [[ "$ORGANISM" == "human" ]]; then
+    ref_file=/home/user/tools/TRUST4/human/human_IMGT+C.fa
 else
-  echo "Unknown organism: $ORGANISM"
-  exit 1
+    echo "ERROR: organism must be 'human' or 'rabbit'"
+    exit 1
 fi
 
-trust4 \
+# Create output directory
+mkdir -p "${SAMPLE}"
+
+# Run TRUST4 (use -f and --ref as same file)
+/home/user/tools/TRUST4/run-trust4 \
   -1 "$R1" \
   -2 "$R2" \
-  -f "$REF_FASTA" \
-  -i "$IMGT_FASTA" \
-  -o "${OUTDIR}/${SAMPLE}"
+  -f "$ref_file" \
+  --ref "$ref_file" \
+  -t 40 \
+  --od "${SAMPLE}" \
+  -o "${SAMPLE}"

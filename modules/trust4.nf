@@ -13,7 +13,7 @@ process TRUST4 {
 
   script:
   """
-  ${projectDir}/bin/trust4_single.sh \
+  ${projectDir}/bin/trust4.sh \
     ${reads[0]} \
     ${reads[1]} \
     ${sample} \
