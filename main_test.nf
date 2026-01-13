@@ -7,76 +7,62 @@ include { RENUMBER_GROUP } from './modules/renumber_group'
 workflow {
 
     /*
-     * ----------------------------
-     * 1. Read sample → group map
-     * ----------------------------
+     * Load metadata
+     * emits: (sample, group)
      */
     samples_ch =
         Channel
             .fromPath('samples.csv')
-            .splitCsv(header: true)
+            .splitCsv(header:true)
             .map { row ->
-                tuple(row.sample, row.group)
+                tuple(row.sample.trim(), row.group.trim())
             }
 
     /*
-     * ----------------------------
-     * 2. Raw FASTQ pairing
-     * ----------------------------
+     * Pair FASTQs
+     * emits: (sample, [R1, R2])
      */
     reads_ch =
         Channel.fromFilePairs("data/*_{1,2}.fastq.gz")
 
     /*
-     * ----------------------------
-     * 3. Per-sample processing
-     * ----------------------------
+     * Attach group BEFORE any processing
+     * emits: (sample, group, [R1, R2])
      */
-    fastp_out  = FASTP(reads_ch)
+    reads_with_group =
+    reads_ch
+        .join(samples_ch)
+        .map { sample, reads, group ->
+            tuple(sample, group, reads)
+        }
+
+
+    /*
+     * Per-sample FASTP
+     * emits: (sample, group, [fastp_R1, fastp_R2])
+     */
+    fastp_out = FASTP(reads_with_group)
+
+    /*
+     * Per-sample TRUST4
+     * emits: (sample, group, annot.fa)
+     */
     trust4_out = TRUST4(fastp_out)
-    // trust4_out: (sample, annot.fa)
 
     /*
-     * ----------------------------
-     * 4. Attach group information
-     * ----------------------------
-     */
-    //trust4_with_group =
-        //trust4_out
-            //.join(samples_ch)
-            //.map { sample, annot_fa, group ->
-                //tuple(group, sample, annot_fa)
-            //}
-    // (group, sample, annot.fa)
-    trust4_with_group =
-      trust4_out
-          .join(samples_ch)
-          .map { sample, values ->
-              def annot_fa = values[0]
-              def group    = values[1]
-              tuple(group, sample, annot_fa)
-          }
-
-    /*
-     * ----------------------------
-     * 5. Group annot.fa by group
-     * ----------------------------
+     * Group annot.fa by biological group
+     * emits: (group, [annot.fa, annot.fa, ...])
      */
     grouped_annots =
-        trust4_with_group
-            .groupTuple(by: 0)
-            .map { group, records ->
-                tuple(
-                    group,
-                    records.collect { it[2] }   // list of annot.fa paths
-                )
-            }
-    // (group, [annot1.fa, annot2.fa, ...])
+    trust4_out
+        .groupTuple(by: 1)
+        .map { samples, group, annots ->
+            tuple(group, annots)
+        }
+
 
     /*
-     * ----------------------------
-     * 6. Per-group renumbering
-     * ----------------------------
+     * Per-group renumbering
      */
     RENUMBER_GROUP(grouped_annots)
 }

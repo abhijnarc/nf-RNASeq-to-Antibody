@@ -1,7 +1,5 @@
 process RENUMBER_GROUP {
 
-  tag { group }
-
   publishDir "${params.outdir}/renumbered", mode: 'copy'
 
   input:
@@ -16,6 +14,7 @@ process RENUMBER_GROUP {
   """
   ${projectDir}/bin/grouping.sh \
     ${group} \
+    ${projectDir} \
     ${annot_fas.join(' ')}
   """
 }

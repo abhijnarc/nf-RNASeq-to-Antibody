@@ -2,9 +2,12 @@
 set -euo pipefail
 
 GROUP="$1"
-shift
-FASTAS="$@"
+PROJECT_DIR="$2"
+shift 2
+ANNOT_FASTAS="$@"
 
-cat ${FASTAS} > ${GROUP}_annot.fa
+# Concatenate FASTAs
+cat ${ANNOT_FASTAS} > ${GROUP}_annot.fa
 
-python renumber.py ${GROUP}
+# Call renumber script using explicit path
+python "${PROJECT_DIR}/bin/renumber.py" "${GROUP}"

@@ -3,10 +3,10 @@ process FASTP {
   publishDir "${params.outdir}/fastp", mode: 'copy'
 
   input:
-  tuple val(sample), path(reads)
+  tuple val(sample), val(group), path(reads)
 
   output:
-  tuple val(sample),
+  tuple val(sample), val(group),
         path("${sample}_fastp_*.fastq.gz")
 
   script:
