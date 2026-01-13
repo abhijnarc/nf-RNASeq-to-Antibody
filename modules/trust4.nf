@@ -1,6 +1,6 @@
 process TRUST4 {
 
-  tag "$sample"
+  tag { sample }
 
   publishDir "${params.outdir}/trust4", mode: 'copy'
 
@@ -9,7 +9,7 @@ process TRUST4 {
 
   output:
   tuple val(sample),
-        path("${sample}/*")
+        path("${sample}/*_annot.fa")
 
   script:
   """
