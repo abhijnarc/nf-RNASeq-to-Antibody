@@ -7,6 +7,7 @@ group = sys.argv[1]
 
 input_fasta = f"{group}_annot.fa"
 output_fasta = f"{group}_renum_annot.fa"
+
 mapping_csv = f"id_mapping_{group}.csv"
 
 def extract_sample(header):

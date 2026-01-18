@@ -12,9 +12,7 @@ process RENUMBER_GROUP {
 
   script:
   """
-  ${projectDir}/bin/grouping.sh \
-    ${group} \
-    ${projectDir} \
-    ${annot_fas.join(' ')}
+  cat ${annot_fas.join(' ')} > ${group}_annot.fa
+  python ${projectDir}/bin/renumber.py ${group}
   """
 }

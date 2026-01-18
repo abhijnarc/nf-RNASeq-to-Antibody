@@ -1,16 +1,13 @@
 import csv
 from Bio import SeqIO
-import sys 
-
-pref = sys.argv[1]
 
 # Input files
-csv_file = "seq_summary_" + pref + ".csv"        
-fasta_file = pref + "_pseudo.fa"   
+csv_file = "seq_summary_cad.csv"        
+fasta_file = "cad_filtered.fa"   
 
 # Output files
-heavy_output = pref + "_heavy.fa"
-light_output = pref + "_light.fa"
+heavy_output = "cad_heavy_nonpseudo.fa"
+light_output = "cad_light_nonpseudo.fa"
 
 # Step 1: Parse seq_summary.csv to extract sequence IDs and classifi>
 def parse_csv(csv_file):

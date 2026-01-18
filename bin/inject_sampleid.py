@@ -7,7 +7,13 @@ output_fa = sys.argv[3]
 
 with open(input_fa) as inp, open(output_fa, "w") as out:
     for rec in SeqIO.parse(inp, "fasta"):
-        # prepend sample ID to original TRUST4 ID
-        rec.id = f"{sample}|{rec.id}"
-        rec.description = rec.id
+        old_id = rec.id
+        old_desc = rec.description
+
+        # Inject sample ID into the contig ID only
+        rec.id = f"{sample}|{old_id}"
+
+        # Preserve full TRUST4 metadata
+        rec.description = f"{rec.id} {old_desc[len(old_id):].lstrip()}"
+
         SeqIO.write(rec, out, "fasta")
