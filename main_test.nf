@@ -5,6 +5,7 @@ include { TRUST4 }         from './modules/trust4'
 include { RENUMBER_GROUP } from './modules/renumber_group'
 include { PROCESS_SEQ }    from './modules/process_seq'
 include { SPLIT_BY_CHAIN } from './modules/split_by_chain'
+include { CDR_PSEUDO }     from './modules/pseudo'
 
 workflow {
 
@@ -77,5 +78,13 @@ workflow {
      * Split by heavy / light
      * -------------------------------
      */
-    SPLIT_BY_CHAIN(process_seq_out)
+
+    split_out = SPLIT_BY_CHAIN(process_seq_out)
+
+    cdr_inputs = split_out
+        .map { group, heavy, light -> [heavy, light] }
+        .flatten()
+
+    CDR_PSEUDO(cdr_inputs)
+
 }
