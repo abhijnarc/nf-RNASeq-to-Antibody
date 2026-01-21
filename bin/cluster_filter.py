@@ -1,31 +1,52 @@
 import csv
 from Bio import SeqIO
+import sys
 
-def parse_clusters(tsv_file):
-    remove_ids = set()
+cluster_tsv   = sys.argv[1]   # e.g. all_groups_Hclusters.tsv (cross-group)
+target_group  = sys.argv[2]   # e.g. CAD (the target group to filter)
+input_fasta   = sys.argv[3]   # e.g. CAD_heavy.fa
+output_fasta  = sys.argv[4]   # e.g. CAD_heavy_unique.fa
+
+# Control group is hardcoded as 'CTL' (adjust if needed)
+control_group = 'CTL'
+
+def ids_to_remove(tsv_file, target, control):
+    """
+    Remove target-group IDs that cluster with control-group IDs.
     
-    with open(tsv_file, newline='') as f:
-        reader = csv.reader(f, delimiter='\t')  # use '\t' for TSV
+    For cross-group clustering:
+    - Parse clusters from the combined file
+    - Find clusters that contain both target and control sequences
+    - Mark all target sequences in such clusters for removal
+    """
+    remove = set()
+
+    with open(tsv_file) as f:
+        reader = csv.reader(f, delimiter="\t")
         for row in reader:
-            row = [x.strip() for x in row if x.strip()]
-            has_assemble = any("assemble" in x for x in row)
-            has_control = any("control" in x for x in row)
-            
-            if has_assemble and has_control:
-                remove_ids.update(row)
-    
-    return remove_ids
+            ids = [x.strip() for x in row if x.strip()]
+
+            target_ids = [x for x in ids if x.startswith(f"{target}_")]
+            control_ids = [x for x in ids if x.startswith(f"{control}_")]
+
+            # If this cluster has BOTH target AND control sequences,
+            # remove the target sequences (they are similar to control)
+            if target_ids and control_ids:
+                remove.update(target_ids)
+
+    return remove
 
 
-def filter_fasta(fasta_in, fasta_out, remove_ids):
-    records = SeqIO.parse(fasta_in, "fasta")
-    with open(fasta_out, "w") as f:
-        SeqIO.write((r for r in records if r.id not in remove_ids), f, "fasta")
+remove_ids = ids_to_remove(cluster_tsv, target_group, control_group)
 
-# --- USAGE ---
-cluster_csv = "Hclusters.tsv"         
-fasta_input = "S34_heavy_nonpseudo.fa"   # Your input FASTA
-fasta_output = "S34_HNPF.fa"
+kept = []
+for rec in SeqIO.parse(input_fasta, "fasta"):
+    if rec.id not in remove_ids:
+        kept.append(rec)
 
-remove_ids = parse_clusters(cluster_csv)
-filter_fasta(fasta_input, fasta_output, remove_ids)
+SeqIO.write(kept, output_fasta, "fasta")
+
+print(f"Target group: {target_group}")
+print(f"Control group: {control_group}")
+print(f"Removed {len(remove_ids)} sequences (similar to control)")
+print(f"Kept {len(kept)} sequences (unique to target)")
