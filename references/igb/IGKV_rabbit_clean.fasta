@@ -1,0 +1,476 @@
+>K02131|IGKV1S1*01|Oryctolagus cuniculus|F|V-REGION|341..643|303 nt|1| | | | |303+42=345| | |
+gcgcttgtgatgacccagactccatcccctgtgtctgcagctgtgggaggcacagtcacc
+atcagttgccagtccagtgagagcgtttatagtaacaaccgcttatcc
+tggtttcagcagaaaccagggcagcctcccaagctcctgatctatactgca
+tccagtctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtggagtgtgacgatgctgcc
+acttactactgtgcaggctataaaagttatagtaagtgatgatac
+>AF135648|IGKV1S10*01|Oryctolagus cuniculus|F|V-REGION|27..322|296 nt|1| | | | |296+48=344|partial in 3'| |
+gatgttgtgatgacccagactccatcctccaagtctgcagctgtgggagacacagtcacc
+atcaagtgccaggccagtcagagcattaatagttacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctacagggca
+tccactctggaatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagcgacctggagtgtgccgatgctgcc
+acttactactgtcaaagcaattattatagtagtagtaatggttc
+>AF135649|IGKV1S11*01|Oryctolagus cuniculus|F|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135650|IGKV1S12*01|Oryctolagus cuniculus|F|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gaccctgtgctgacccagactgcatcgcccgtgtctgcagctgtgggaggcacagtcacc
+atcagttgccagtccagtcagagtgtttataataacaactggttatcc
+tggtatcagcagaaaccagggcagcctcccaaactcctgatctatggtgca
+tccactctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtcaaggagcatatagtggtaatatttac
+>AF135651|IGKV1S13*01|Oryctolagus cuniculus|P|V-REGION|27..325|299 nt|1| | | | |299+45=344|partial in 3'| |
+gcccttgtgatgacccagactccatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccagtccagtcagagtgtttatagtaactacttatcc
+tggtttcagtagaaaccaggtcagcctcccaagctcctgatctacagggca
+tccaatctggaaactggggtcccatcgcggttcaaaggcagtgga
+tttgggacacagttcactctcaccatcagcggtgcacagtgtgacgatgctgcc
+acttactactgtgcaggctataaaaattatagtaatgatgatac
+>AF135652|IGKV1S14*01|Oryctolagus cuniculus|F|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaactggttatcc
+tggtatcagcagaaaccagggcagcctcccaaactcctgatctatggtgca
+tccactctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtcaaggagcatatagtggtaatatttac
+>AF135653|IGKV1S15*01|Oryctolagus cuniculus|F|V-REGION|27..326|300 nt|1| | | | |300+42=342|partial in 3'| |
+gcccaagggccaacccagactccatcctccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccagaccagtgagagtttttatagtaacaacatcttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcttgatctatgatgca
+tccactctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagcgacgtgcagtgtgacgatgctgcc
+acttactactgtcaaggcagttatcatagtagtggttggtac
+>AF135654|IGKV1S16*01|Oryctolagus cuniculus|F|V-REGION|27..331|305 nt|1| | | | |305+42=347|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctattctgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtctaggcgaatttagtagtagtagtgctgattgtac
+>AF135655|IGKV1S17*01|Oryctolagus cuniculus|F|V-REGION|26..321|296 nt|1| | | | |296+48=344|partial in 3'| |
+gcccttgtgatgacccagactccagcctccgtggaggcagctgtgggaggcacagtcacc
+atcaagtgccaggccagtcagagcattagcaacctcttagcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctattatgca
+tccgatctggcatctggggtctcatcaaggttcaaaggcagtgga
+tctgggacagagtacactctcaccatcagtggcgtgcagtgtgccgatgctgcc
+acttactactgtcaaggctattattatagtagtagtgctgatac
+>AF135656|IGKV1S18*01|Oryctolagus cuniculus|F|V-REGION|27..331|305 nt|1| | | | |305+42=347|partial in 3'| |
+gcagccgtgatgacccagactccatcgcccgtgtctgtagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagtgtttataataacaactacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctattctgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtctaggcgaatttagtagtagtagtgctgattgtac
+>AF135657|IGKV1S19*01|Oryctolagus cuniculus|F|V-REGION|27..325|299 nt|1| | | | |299+42=341|partial in 3'| |
+gcagccgtgctgacccagacaccatcgcccgtgtctgcagctgtgggaggcacagtcacc
+atcaagtgccagtccagtcagagtgtttataataacaacctcttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctatgatgca
+tccaatctggcatctggggtcccagataggttcagcggcagtgga
+tctgggacacagttcactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtctaggcggttatgatgatgatgctgatac
+>X02336|IGKV1S2*01|Oryctolagus cuniculus|F|V-REGION|196..495|300 nt|1| | | | |300+42=342| | |
+gctcaagtgctgacccagactgaatcgcccgtgtctgcacctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagtgtttatgataacaactggttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctatgatgca
+tccaaactggcatctggggtcccatcacggttcagcggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtacagtgtgacgatgctgcc
+acttactactgtcaaggcagttattatagtagtggttggtac
+>K02438|IGKV1S2*02|Oryctolagus cuniculus|F|V-REGION|196..495|300 nt|1| | | | |300+42=342| | |
+gctcaagtgctgacccagactgaatcgcccgtgtctgcacctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagtgtttatgataacaactacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctatgatgca
+tccaaactggcatctggggtcccatcacggttcagcggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtacagtgtgacgatgctgcc
+acttactactgtcaaggcagttattatagtagtggttggtac
+>AF135658|IGKV1S20*01|Oryctolagus cuniculus|F|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccagtccagtcagagtgtttataataacaactggttatcc
+tggtatcagcagaaaccagggcagcctcccaaactcctgatctatggtgca
+tccactctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtcaaggagcatatagtggtaatatttac
+>AF135659|IGKV1S21*01|Oryctolagus cuniculus|F|V-REGION|27..313|287 nt|1| | | | |287+48=335|partial in 3'| |
+tatgtcatgatgacccagactccatcctctgtgtctgaagctgtgggaggcacagtcacc
+atctattgccaagccagtcagagtgttagcaacctcttagcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatttatggtgca
+tccaatctggaatctggggtcccatcgcggttccgtggcagtgga
+tctgggacacagttcactcttaccatcagcggcatgaaggctgaagatgttgcc
+acctattactgtcatcagcacagcagttaccctcc
+>AF135660|IGKV1S22*01|Oryctolagus cuniculus|F|V-REGION|27..325|299 nt|1| | | | |299+42=341|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtcaatgcacttatagtagtagtactggttc
+>AF135661|IGKV1S23*01|Oryctolagus cuniculus|F|V-REGION|30..326|297 nt|1| | | | |297+42=339|partial in 3'| |
+gatgtcgtgatgacccagactccatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135662|IGKV1S24*01|Oryctolagus cuniculus|F|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtcaaggagcatatagtggtaatatttac
+>AF135663|IGKV1S25*01|Oryctolagus cuniculus|F|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtcaaggagcatatagtggtaatatttac
+>AF135619|IGKV1S26*01|Oryctolagus cuniculus|F|V-REGION|27..317|291 nt|1| | | | |291+48=339|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtagcgacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctattctgca
+tccaaactggcaactggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135601|IGKV1S27*01|Oryctolagus cuniculus|[F]|V-REGION|27..325|299 nt|1| | | | |299+48=347|partial in 3'| |
+tatgtcatgatgacccagactccatcctctgtgtctgaagctgtgggaggcacagtcacc
+atctattgccaagccagtcagagtgttagcaacctcttagcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctatggtgca
+tccactctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacagagtacactctcaccatcagcggtgtgcagtgtgacgatgctgcc
+acttactactgtctaggcgaatttagtagtagtagtgctgattgtac
+>AF135602|IGKV1S28*01|Oryctolagus cuniculus|[F]|V-REGION|27..319|293 nt|1| | | | |293+48=341|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtagcgacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctattctgca
+tccaaactggcaactggggtcccatcgcggttcagcggcagtgga
+tctgggacacagtttactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtcaatgcacttatagtagtagtactggttc
+>AF135603|IGKV1S29*01|Oryctolagus cuniculus|[F]|V-REGION|30..320|291 nt|1| | | | |291+48=339|partial in 3'| |
+gatgtcgtgatgacccagactccatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtagcgacttatcc
+tggtatcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>X02337|IGKV1S3*01|Oryctolagus cuniculus|F|V-REGION|320..615|296 nt|1| | | | |296+48=344| | |
+gcccaagtgctgacccagactccagcctccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtgagagcattagtagctacttaaac
+tggtatcagcagaaactagggcagcctcccaaactcctgatctattatgca
+tccactctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacagagtacactcttaccatcagcggtgtgcagtgtgacgatgctgcc
+acttactactgtcagcatggttatatttatagtagtggtgatac
+>K02439|IGKV1S3*02|Oryctolagus cuniculus|F|V-REGION|319..614|296 nt|1| | | | |296+48=344| | |
+gcccaagtgatgacccagactccagcctccgtgtctgcagctgtgggaggcacagtcacc
+atcatctgccaggccagtgagagcattagtagctacttaaac
+tggtatcagcagaaactagggcagcctcccaaactcctgatctattatgca
+tccactctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacagagtacactcttaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtcagcatggttatatttatagtagtggtgatac
+>AF135604|IGKV1S30*01|Oryctolagus cuniculus|[F]|V-REGION|27..334|308 nt|1| | | | |308+42=350|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtcaaagcaattattatagtagtagtagtaattatggtgc
+>AF135605|IGKV1S31*01|Oryctolagus cuniculus|[F]|V-REGION|30..326|297 nt|1| | | | |297+42=339|partial in 3'| |
+gacattgtgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135606|IGKV1S32*01|Oryctolagus cuniculus|[F]|V-REGION|27..322|296 nt|1| | | | |296+48=344|partial in 3'| |
+gccgtcgtgctgacccagactgcatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattagcactgcattagcc
+tggtatcagcagaaaccagggcagcgtcccaagctcctgatctacgatgca
+tcgaaactggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtcaacagggttatagtagtagtagtgctgatac
+>AF135607|IGKV1S33*01|Oryctolagus cuniculus|[F]|V-REGION|27..325|299 nt|1| | | | |299+42=341|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctattctgca
+tccaaactggcaactggggtcccatcgcggttcagcggcagtgga
+tctgggacacagtttactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtcaatgcacttatagtagtagtactggttc
+>AF135608|IGKV1S34*01|Oryctolagus cuniculus|[F]|V-REGION|30..325|296 nt|1| | | | |296+48=344|partial in 3'| |
+gatgtcgtgatgacccagactccatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtagcgacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctattctgca
+tccaaactggcaactggggtcccatcgcggttcagcggcagtgga
+tctgggacagagttcactctcaccatcagcgacctggagtgtgccgatgctgcc
+acttactactgtcaaagctattatggtagtagtagtactggttc
+>AF135609|IGKV1S35*01|Oryctolagus cuniculus|[F]|V-REGION|30..316|287 nt|1| | | | |287+48=335|partial in 3'| |
+gatgtcgtgatgacccagactccatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtagcgacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctattctgca
+tccaaactggcaactggggtcccatcgcggttccgtggcagtgga
+tctgggacacagttcactcttaccatcagcggcatgaaggctgaagatgttgcc
+acctattactgtcatcagcacagcagttaccctcc
+>AF135610|IGKV1S36*01|Oryctolagus cuniculus|[F]|V-REGION|30..322|293 nt|1| | | | |293+48=341|partial in 3'| |
+gatgtcgtgatgacccagactccatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtagcgacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtaga
+tctgggacagagttcactctcaccatcagcgacctggagtgtgccgatgctgcc
+acttactactgtcaatgcacttatagtagtagtactggttc
+>AF135611|IGKV1S37*01|Oryctolagus cuniculus|[F]|V-REGION|30..325|296 nt|1| | | | |296+48=344|partial in 3'| |
+gatgtcgtgatgacccagactccatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtagcgacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctacagggca
+tccactctggaatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagcgacctggagtgtgccgatgctgcc
+acttactactgtcagcatggttatatttatagtagtggtgattc
+>AF135613|IGKV1S39*01|Oryctolagus cuniculus|[F]|V-REGION|30..320|291 nt|1| | | | |291+48=339|partial in 3'| |
+gatgtcgtgatgacccagactccatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtagcgacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctattctgca
+tccaaactggcaactggggtcccatcgcggttcagcggcagtgga
+tctgggacacagtttactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtcaaggcagttatagtggtgctacttac
+>K02440|IGKV1S4*01|Oryctolagus cuniculus|ORF|V-REGION|293..586|294 nt|1| | | | |294+48=342| | |
+gccatcgatatgacccagactccagcctccgtggaggcagctgtgggaggcacaatcacc
+atcaattgccaagccagtgagagcattagcagttggttagcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctacgaagca
+tccaaactggcatctggggtcccatcgcggttcagtggcagtgga
+tctgggacacagttcactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtcaaggcggttattataatagtggttggtac
+>AF135614|IGKV1S40*01|Oryctolagus cuniculus|[F]|V-REGION|27..331|305 nt|1| | | | |305+42=347|partial in 3'| |
+gaccctgtgctgacccagactgcatcgcccgtgtctgcagctgtgggaggcacagtcacc
+atcagttgccagtccagtcagagtgtttataataacaactggttatcc
+tggtatcagcagaaaccaggacagcctcccaaactcctgatctatggtgca
+tccactctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtctaggcgaatttagtagtagtagtgctgattgtac
+>AF135615|IGKV1S41*01|Oryctolagus cuniculus|[F]|V-REGION|27..331|305 nt|1| | | | |305+42=347|partial in 3'| |
+gcagccgtgctgacccagacaccatcgcccgtgtctgtagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagtgtttataataacaactacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctattctgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggtgtgcagtgtgacgatgctgcc
+acttactactgtctaggtgaatttagttgtagtagtgctgattgtac
+>AF135616|IGKV1S42*01|Oryctolagus cuniculus|[F]|V-REGION|27..320|294 nt|1| | | | |294+48=342|partial in 3'| |
+gaccctatgctgacccagactccatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattagcaatgaattatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctatctggca
+tccactctggcatctggggtcccaccgcggttcaaaggcagtgga
+tctgggacagagttcactctcaccatcagcgacctggagtgtgccgatgctgcc
+acttactactgtcaaaactattatggtagtagtgctggtgct
+>AF135618|IGKV1S44*01|Oryctolagus cuniculus|[F]|V-REGION|27..319|293 nt|1| | | | |293+48=341|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtgagaacatttatagtggtttggcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctatgctgca
+tccaatctggaaactggggtcccatcacggttcagcggcagtgga
+tctgggacagagtacactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtcaatgcacttatagtagtagtactggttc
+>AF135620|IGKV1S45*01|Oryctolagus cuniculus|[F]|V-REGION|27..319|293 nt|1| | | | |293+42=335|partial in 3'| |
+gcagccgtgctgacccagacaccatcgcccgtgtctgtagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagtgtttataataacaactacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctattctgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagcggggtgcagcctggagatgctgcc
+acttactactgtctagatgatattgacacccctcc
+>AF135621|IGKV1S46*01|Oryctolagus cuniculus|[F]|V-REGION|27..331|305 nt|1| | | | |305+42=347|partial in 3'| |
+gaccctgtgctgacccagactgcatcgcccgtgtctgcagctgtgggaggcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaactacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctattctgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtctaggcgaatttagtagtagtagtgctgattgtac
+>AF135622|IGKV1S47*01|Oryctolagus cuniculus|[F]|V-REGION|27..317|291 nt|1| | | | |291+48=339|partial in 3'| |
+gccatcaaaatgacccagactccatcctccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtgaggacattgaaagctttttagcc
+tggtatcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135623|IGKV1S48*01|Oryctolagus cuniculus|[F]|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaactacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctattctgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135624|IGKV1S49*01|Oryctolagus cuniculus|[F]|V-REGION|27..325|299 nt|1| | | | |299+48=347|partial in 3'| |
+gaccctgtgctgacccagactccatcttccgcgtgtgaacctgtgggaggcacagtcacc
+atcaagtgccaggccagtgagagcattagtagtagattagcc
+tggtatcagcagaaaccagggcagtctcccaagctcctgatctattctgca
+tccactctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacagagtacactctcaccatcagcgacctggagtgtgccgatgctgcc
+acttactactgtcaaaacaataatggtggtagtggtagtactggttc
+>X00977|IGKV1S5*01|Oryctolagus cuniculus|F|V-REGION|319..623|305 nt|1| | | | |305+42=347| | |
+gaccctgtgatgacccagactccatcttccacgtctgcggctgtgggaggcacagtcacc
+atcaactgccagtccagtcagaatgtttatagtaacaactacttatcc
+tggtttcagcagaaaccagggcagcctcccaagctcctgatctatggtgca
+tccaaactggcatctggggtcccatcgcggttcagcggcagtgga
+tctgggaaacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagggtattattatagtggtagtggcactgatac
+>AF135625|IGKV1S50*01|Oryctolagus cuniculus|[F]|V-REGION|27..325|299 nt|1| | | | |299+42=341|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctattctgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtcaatgcacttatagtagtagtactggttc
+>AF135626|IGKV1S51*01|Oryctolagus cuniculus|[F]|V-REGION|27..317|291 nt|1| | | | |291+48=339|partial in 3'| |
+tatgtcatgatgacccagactccatcctctgtgtctgaagctgtgggaggcacagtcacc
+atctattgccaagccagtcagagtgttagcaacctcttagcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatttatggtgca
+tccaatctggaatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135627|IGKV1S52*01|Oryctolagus cuniculus|[F]|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcagttgccagtccagtcagagtgtttataataacaactggttatcc
+tggtatcagcagaaaccagggcagcctcccaaactcctgatctatggtgca
+tccactctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135628|IGKV1S53*01|Oryctolagus cuniculus|[F]|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+tatgtcatgatgacccagactccatcctctgtgtctgaagctgtgggaggcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135629|IGKV1S54*01|Oryctolagus cuniculus|[F]|V-REGION|30..328|299 nt|1| | | | |299+42=341|partial in 3'| |
+gatgtcgtgatgacccagactccatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtcaatgcacttatagtagtagtactggttc
+>AF135630|IGKV1S55*01|Oryctolagus cuniculus|[F]|V-REGION|27..325|299 nt|1| | | | |299+42=341|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcaactggggtcccatcgcggttcagcggcagtgga
+tctgggacacagtttactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtcaatgcacttatagtagtagtactggttc
+>AF135631|IGKV1S56*01|Oryctolagus cuniculus|[F]|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gaccctgtgctgacccagactgcatcgcccgtgtctgcagctgtgggaggcacagtcacc
+atcagttgccagtccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135632|IGKV1S57*01|Oryctolagus cuniculus|[F]|V-REGION|27..319|293 nt|1| | | | |293+42=335|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagctcttgatctataaggca
+cccaaactgcaatctggggtcccatcgtgggtcagcagcagtgga
+tcagggacagagttcactctcaccatcagcggggtgcagcctggagatgctgcc
+acttactactgtctagatgatattgacacccctcc
+>AF135633|IGKV1S58*01|Oryctolagus cuniculus|[F]|V-REGION|30..293|291 nt|1| | | | |291+48=339|partial in 3'| |
+gatgtcgtgatgacccagactccatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtagcgacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctattctgca
+tccaaactggcaactggggtcccatcgcggttcagcggcagtgga
+tctgggacacagtttactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135634|IGKV1S59*01|Oryctolagus cuniculus|[F]|V-REGION|27..331|305 nt|1| | | | |305+42=347|partial in 3'| |
+gcagccgtgctgacccagacaccatcgcccgtgtctgtagctgtgggaggcacagtcacc
+atcagttgccagtccagtcagagtgtttataataacaactggttatcc
+tggtatcagcagaaaccagggcagcctcccaaactcctgatctatggtgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtctaggcgaatttagtagtagtagtgctgattgtac
+>X14364|IGKV1S6*01|Oryctolagus cuniculus|F|V-REGION|320..612|293 nt|1| | | | |293+48=341| | |
+gatggcgtgatgacccagactccagcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtagcgacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctattctgca
+tccaaactggcaactggggtcccatcgcggttcaacggcagtgga
+tctgggacacagtttactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtcaatgcacttatagtagtagtactggttc
+>AF135635|IGKV1S60*01|Oryctolagus cuniculus|[F]|V-REGION|27..331|305 nt|1| | | | |305+42=347|partial in 3'| |
+gaccctgtgctgacccagacaccatcgcccgtgtctgtagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagtgtttataataacaactacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctattctgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtctaggcgaatttagtagtagtagtgctgattgtac
+>AF135636|IGKV1S61*01|Oryctolagus cuniculus|[F]|V-REGION|27..325|299 nt|1| | | | |299+48=347|partial in 3'| |
+gccctggtgatgacccagactccatcctccacgtctgaacctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtactaggttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctattctgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtctaggcgaatttagtagtagtagtgctgattgtac
+>AF135637|IGKV1S62*01|Oryctolagus cuniculus|[F]|V-REGION|30..334|305 nt|1| | | | |305+42=347|partial in 3'| |
+gatgtcgtgatgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtctaggcgaatttagtagtagtagtgctgattgtac
+>AF135638|IGKV1S63*01|Oryctolagus cuniculus|[F]|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gcagccgtgctgacccagacaccatcgcccgtgtctgtagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagtgtttataataacaactacttagcc
+tggtttcagcagaaaccagggcagcctcccaaactcctgatctatggtgca
+tccactctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135639|IGKV1S64*01|Oryctolagus cuniculus|[F]|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gaccctgtgctgacccagactgcatcgcccgtgtctgcagctgtgggaggcacagtcacc
+atcagttgccagtccagtcagagtgtttataataacaactggttatcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135640|IGKV1S65*01|Oryctolagus cuniculus|[F]|V-REGION|27..317|291 nt|1| | | | |291+48=339|partial in 3'| |
+tatgtcatgatgacccagactccatcctctgtgtctgaagctgtgggaggcacagtcacc
+atctattgccaagccagtcagagtgttagcaacctcttagcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatttatggtgca
+tccaatctggaatctggggtcccatcgcggttccgtggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135642|IGKV1S66*01|Oryctolagus cuniculus|[F]|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcgcaagcttctgatctattctgca
+tccactctggcatcgggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135643|IGKV1S67*01|Oryctolagus cuniculus|[F]|V-REGION|27..317|291 nt|1| | | | |291+48=339|partial in 3'| |
+gatgttgtgatgacccagactccatcctccaagtctgcagctgtgggagacacagtcacc
+atcaagtgccaggccagtcagagcattagtagttacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctacagggca
+tccactctggaatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135644|IGKV1S68*01|Oryctolagus cuniculus|[F]|V-REGION|27..323|297 nt|1| | | | |297+42=339|partial in 3'| |
+gcagccgtgctgacccagacaccatcgcccgtgtctgtagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagtgtttataataacaactacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctattctgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtgcagcccgttatagtggtaatatttac
+>AF135645|IGKV1S7*01|Oryctolagus cuniculus|F|V-REGION|30..322|293 nt|1| | | | |293+48=341|partial in 3'| |
+gatgtcgtgatgacccagactccatcccccgtgtctgcagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagcattggtagcgacttatcc
+tggtatcagcagaaaccagggcagcctcccaagctcctgatctattctgca
+tccaaactggcaactggggtcccatcgcggttcagcggcagtgga
+tctgggacacagtttactctcaccatcagcggcgtgcagtgtgacgatgctgcc
+acttactactgtcaatgcacttatagtagtagtactggttc
+>AF135646|IGKV1S8*01|Oryctolagus cuniculus|F|V-REGION|27..325|299 nt|1| | | | |299+42=341|partial in 3'| |
+gaccctatgctgacccagactgcatcccccgtgtctgcagctgtgggaagcacagtcacc
+atcagttgccaggccagtcagagtgtttataataacaacaacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctatgctgca
+tccaatctggcatctggggtcccatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcaacggcgtgcagtgtgacgatgctgcc
+acttactactgtcaatgcacttatagtagtagtactggttc
+>AF135647|IGKV1S9*01|Oryctolagus cuniculus|F|V-REGION|27..331|305 nt|1| | | | |305+42=347|partial in 3'| |
+gcagccgtgctgacccagacaccatcgcccgtgtctgtagctgtgggaggcacagtcacc
+atcaattgccaggccagtcagagtgtttataataacaactacttagcc
+tggtttcagcagaaaccagggcagcctcccaagcttctgatctattctgca
+tccactctggcatctggggtctcatcgcggttcaaaggcagtgga
+tctgggacacagttcactctcaccatcagtggcgtgcagtgtgacgatgctgcc
+acttactactgtctaggcgaatttagtagtagtagtgctgattgtac

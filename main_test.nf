@@ -8,6 +8,7 @@ include { SPLIT_BY_CHAIN }     from './modules/split_by_chain'
 include { CDR_PSEUDO }         from './modules/pseudo'
 include { MMSEQS_CLUSTER }     from './modules/mmseqs_cluster'
 include { FILTER_BY_CLUSTER }  from './modules/cluster_filter'
+include { IGBLAST }            from './modules/igblast'  // ADD THIS LINE
 
 workflow {
 
@@ -88,70 +89,91 @@ workflow {
     split_out = SPLIT_BY_CHAIN(process_seq_out)
     // (group, heavy.fa, light.fa)
 
- /*
- * -------------------------------
- * 8. Generate pseudo-sequences
- * -------------------------------
- */
-cdr_inputs =
-    split_out
-        .flatMap { group, heavy, light -> 
-            [heavy, light]
-        }
+    /*
+     * -------------------------------
+     * 8. Generate pseudo-sequences
+     * -------------------------------
+     */
+    cdr_inputs =
+        split_out
+            .flatMap { group, heavy, light -> 
+                [heavy, light]
+            }
 
-CDR_PSEUDO(cdr_inputs)
-    .set { pseudo_out }
-// emits files like CTL_heavy_pseudo.fa, CTL_light_pseudo.fa
+    CDR_PSEUDO(cdr_inputs)
+        .set { pseudo_out }
+    // emits files like CTL_heavy_pseudo.fa, CTL_light_pseudo.fa
 
-/*
- * -------------------------------
- * 9. MMSeqs2 clustering (cross-group)
- * -------------------------------
- */
-// Collect all heavy and light pseudo files
-heavy_pseudo_all = pseudo_out.filter { file -> file.name.contains('_heavy_pseudo') }.collect()
-light_pseudo_all = pseudo_out.filter { file -> file.name.contains('_light_pseudo') }.collect()
+    /*
+     * -------------------------------
+     * 9. MMSeqs2 clustering (cross-group)
+     * -------------------------------
+     */
+    // Collect all heavy and light pseudo files
+    heavy_pseudo_all = pseudo_out.filter { file -> file.name.contains('_heavy_pseudo') }.collect()
+    light_pseudo_all = pseudo_out.filter { file -> file.name.contains('_light_pseudo') }.collect()
 
-// Create a single-element channel containing the collected files
-cluster_files_ch = channel.of([heavy_pseudo_all, light_pseudo_all])
+    // Create a single-element channel containing the collected files
+    cluster_files_ch = channel.of([heavy_pseudo_all, light_pseudo_all])
 
-MMSEQS_CLUSTER(heavy_pseudo_all, light_pseudo_all)
+    MMSEQS_CLUSTER(heavy_pseudo_all, light_pseudo_all)
 
-/*
- * -------------------------------
- * 10. Cluster filtering (cross-group comparison)
- * -------------------------------
- */
-heavy_filter_inputs =
-    split_out
-        .map { group, heavy_fa, light_fa ->
-            tuple(group, 'heavy', heavy_fa)
-        }
+    /*
+     * -------------------------------
+     * 10. Cluster filtering (cross-group comparison)
+     * -------------------------------
+     */
+    heavy_filter_inputs =
+        split_out
+            .map { group, heavy_fa, light_fa ->
+                tuple(group, 'heavy', heavy_fa)
+            }
 
-light_filter_inputs =
-    split_out
-        .map { group, heavy_fa, light_fa ->
-            tuple(group, 'light', light_fa)
-        }
+    light_filter_inputs =
+        split_out
+            .map { group, heavy_fa, light_fa ->
+                tuple(group, 'light', light_fa)
+            }
 
-// Get cluster file paths from MMSEQS_CLUSTER output
-h_clusters_file = MMSEQS_CLUSTER.out[0]
-l_clusters_file = MMSEQS_CLUSTER.out[1]
+    // Get cluster file paths from MMSEQS_CLUSTER output
+    h_clusters_file = MMSEQS_CLUSTER.out[0]
+    l_clusters_file = MMSEQS_CLUSTER.out[1]
 
-// Combine with cluster outputs
-heavy_with_clusters = 
-    heavy_filter_inputs.combine(h_clusters_file)
-        .map { group, chain, fa, h_clusters ->
-            tuple(group, chain, h_clusters, fa)
-        }
+    // Combine with cluster outputs
+    heavy_with_clusters = 
+        heavy_filter_inputs.combine(h_clusters_file)
+            .map { group, chain, fa, h_clusters ->
+                tuple(group, chain, h_clusters, fa)
+            }
 
-light_with_clusters = 
-    light_filter_inputs.combine(l_clusters_file)
-        .map { group, chain, fa, l_clusters ->
-            tuple(group, chain, l_clusters, fa)
-        }
+    light_with_clusters = 
+        light_filter_inputs.combine(l_clusters_file)
+            .map { group, chain, fa, l_clusters ->
+                tuple(group, chain, l_clusters, fa)
+            }
 
-FILTER_BY_CLUSTER(
-    heavy_with_clusters.mix(light_with_clusters)
-)
+    FILTER_BY_CLUSTER(
+        heavy_with_clusters.mix(light_with_clusters)
+    )
+    // Output: (group, chain, cluster_file, unique.fa)
+
+    /*
+     * -------------------------------
+     * 11. IgBLAST annotation
+     * -------------------------------
+     */
+    igblast_inputs = 
+        FILTER_BY_CLUSTER.out
+            .map { file ->
+                // Extract group and chain from filename
+                // Expected format: {group}_{chain}_unique.fa
+                def basename = file.getName().replace('_unique.fa', '')
+                def parts = basename.split('_')
+                def chain = parts[-1]  // last part is chain (heavy/light)
+                def group = parts[0..-2].join('_')  // everything before chain is group
+                tuple(group, chain, file)
+            }
+
+    IGBLAST(igblast_inputs)
+    // Output: (group, chain, airr_file)
 }
