@@ -8,7 +8,8 @@ include { SPLIT_BY_CHAIN }     from './modules/split_by_chain'
 include { CDR_PSEUDO }         from './modules/pseudo'
 include { MMSEQS_CLUSTER }     from './modules/mmseqs_cluster'
 include { FILTER_BY_CLUSTER }  from './modules/cluster_filter'
-include { IGBLAST }            from './modules/igblast'  // ADD THIS LINE
+include { IGBLAST }            from './modules/igblast'
+include { RIOT_PROCESS }       from './modules/riot_process'
 
 workflow {
 
@@ -173,7 +174,29 @@ workflow {
                 def group = parts[0..-2].join('_')  // everything before chain is group
                 tuple(group, chain, file)
             }
+            .filter { group, chain, file ->
+                // Only process target groups (exclude control group 'CTL')
+                group != 'CTL'
+            }
 
     IGBLAST(igblast_inputs)
     // Output: (group, chain, airr_file)
+
+    /*
+     * -------------------------------
+     * 12. RIOT processing (filter productive + align)
+     * -------------------------------
+     */
+    // Only process target groups (exclude control group 'CTL')
+    riot_inputs = 
+        IGBLAST.out
+            .filter { group, chain, airr_file ->
+                group != 'CTL'
+            }
+            .map { group, chain, airr_file ->
+                tuple(group, chain, airr_file)
+            }
+
+    RIOT_PROCESS(riot_inputs)
+    // Output: (group, chain, riot.fa)
 }
