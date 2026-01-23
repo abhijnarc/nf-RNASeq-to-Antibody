@@ -11,3 +11,5 @@ logs/*.txt
 *.airr
 *.csv
 *.tsv
+immunomatch_test/
+

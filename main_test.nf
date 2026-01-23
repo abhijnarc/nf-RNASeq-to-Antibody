@@ -10,6 +10,8 @@ include { MMSEQS_CLUSTER }     from './modules/mmseqs_cluster'
 include { FILTER_BY_CLUSTER }  from './modules/cluster_filter'
 include { IGBLAST }            from './modules/igblast'
 include { RIOT_PROCESS }       from './modules/riot_process'
+include { IGFOLD }             from './modules/igfold'
+include { IMMUNOMATCH }        from './modules/immunomatch'
 
 workflow {
 
@@ -199,4 +201,32 @@ workflow {
 
     RIOT_PROCESS(riot_inputs)
     // Output: (group, chain, riot.fa)
+
+    /*
+     * -------------------------------
+     * 13. ImmunoMatch database search
+     * -------------------------------
+     */
+    immunomatch_inputs =
+        RIOT_PROCESS.out
+            .map { group, chain, riot_fa ->
+                tuple(group, chain, riot_fa)
+            }
+
+    IMMUNOMATCH(immunomatch_inputs)
+    // Output: (group, chain, immunomatch.csv)
+
+    /*
+     * -------------------------------
+     * 14. IgFold 3D structure prediction
+     * -------------------------------
+     */
+    igfold_inputs =
+        RIOT_PROCESS.out
+            .map { group, chain, riot_fa ->
+                tuple(group, chain, riot_fa)
+            }
+
+    IGFOLD(igfold_inputs)
+    // Output: (group, chain, pdb/)
 }

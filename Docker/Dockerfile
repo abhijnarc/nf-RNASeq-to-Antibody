@@ -8,21 +8,36 @@ RUN apt-get update && apt-get install -y \
     git curl rsync bash coreutils procps \
     && rm -rf /var/lib/apt/lists/*
 
-# Install python libs
-RUN pip3 install pandas biopython
+# Install python libs (including IgFold and ImmunoMatch dependencies)
+RUN pip3 install pandas biopython pytorch::pytorch pytorch::pytorch-cuda=11.8 pytorch-lightning \
+    dm-tree immuno-match igfold
 
-# Install fastp (example)
+# Install additional dependencies for structure prediction tools
+RUN pip3 install numpy scipy scikit-learn matplotlib seaborn requests
+
+# Install fastp and other bioinformatics tools dependencies
 RUN apt-get update && apt-get install -y cmake libz-dev libbz2-dev liblzma-dev libncurses-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# You should install TRUST4, mmseqs2, igblast and RIOT here.
-# Example placeholders - for reproducible image you should download & install specific releases
-# e.g: install mmseqs2 from apt or build from binary package
-# COPY local binaries if you have them:
+# Install Nextflow (optional, can be run from host)
+RUN curl -fsSL https://get.nextflow.io | bash && \
+    mv nextflow /usr/local/bin/ && \
+    chmod +x /usr/local/bin/nextflow
+
+# Install TRUST4, mmseqs2, igblast, RIOT binaries
+# These should be copied from local or downloaded from releases
 # COPY Tools/ mmseqs2/ trust4/ igblast/ riot/ /usr/local/bin/
 
 WORKDIR /app
-COPY bin/ /app/bin
-RUN chmod +x /app/bin/*
 
+# Copy pipeline code
+COPY bin/ /app/bin
+COPY modules/ /app/modules
+COPY conf/ /app/conf
+COPY references/ /app/references
+
+RUN chmod +x /app/bin/*.sh /app/bin/*.py
+
+# Set up environment
 ENV PATH="/app/bin:${PATH}"
+ENV PYTHONPATH="/app/bin:${PYTHONPATH}"
