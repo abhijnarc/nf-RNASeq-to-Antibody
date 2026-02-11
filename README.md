@@ -75,11 +75,13 @@ These steps are designed as **optional workflow branches** and can be enabled la
 
 ### FASTQ files
 Paired-end reads named as:
+```
 data/
 ├── SAMPLE1_1.fastq.gz
 ├── SAMPLE1_2.fastq.gz
 ├── SAMPLE2_1.fastq.gz
 └── SAMPLE2_2.fastq.gz
+```
 
 ### Sample metadata (`samples.csv`)
 A CSV file mapping samples to groups:
