@@ -1,6 +1,9 @@
 # RNASeq-to-Antibody (VH/VL → Pairing → Modelling)
 
-A reproducible **Nextflow DSL2 pipeline** for reconstructing antibody repertoires from RNA-seq data, filtering viable VH/VL chains, pairing compatible heavy–light chains, and (optionally) modelling structures.
+A reproducible **Nextflow DSL2 pipeline** for reconstructing antibody repertoires from RNA-seq data, filtering viable VH/VL chains, pairing compatible heavy–light chains, and (optionally) modelling structures. 
+
+# About the Project
+* This pipeline was developed by the Computational Biology team @ the Mazumdar Shaw Medical Foundation
 
 ---
 
